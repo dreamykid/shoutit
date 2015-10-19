@@ -1,0 +1,29 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1 ><font color="black">Shout it!!! </font></h1>
+    <img class='resize_fit_center' src="assets/images/mountain.jpg " alt="I'm Yeoman">
+  </div>
+</header>
+
+<div class="container" >
+  <div class="rows">
+    <div class="center" ng-controller="ShoutController">
+   	  <input ng-model="shout.newShout" >
+   	  <button class="btn" ng-click="shout.addShout(newShout);shout.reloadShouts();">Shout</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="resize_fit_center">
+      <div class="col-lg-12">
+        <h1 class="page-header">Shouts:</h1>
+          <div style="overflow: scroll; height:300px;">
+        <ul class="nav " ng-repeat="sh in shout.shouts">
+          <li><a href="#" tooltip="{{sh.content}}">{{sh.content}}</a></li>
+        </ul>
+          </div>
+      </div>
+    </div>
+
+</div>
