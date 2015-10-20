@@ -17,6 +17,7 @@
     "babel-runtime": "^5.8.20",
     "ejs": "^2.3.3",
     "sequelize": "^3.5.1",
+    "pg": "^3.6.2",
     "express-sequelize-session": "0.4.0",
     "serve-favicon": "^2.3.0"
   },
