@@ -10,7 +10,7 @@ function ShoutController($scope, $http) {
     self.shouts = response.data;
   });
 
-  this.addShout = function(argShout) {
+  this.addShout = function() {
     if (self.newShout === '') {
     	return;
     }
