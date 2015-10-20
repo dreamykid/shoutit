@@ -20,5 +20,10 @@ module.exports = {
             process.env.OPENSHIFT_MONGODB_DB_URL +
             process.env.OPENSHIFT_APP_NAME ||
             'mongodb://localhost/shout'
-  }
+  },
+  sequelize: {
+    uri: 'postgres://vltpneccejwcxf:pAWmJEQD_A8qYun0wbPyXHv-Xa@ec2-107-21-219-142.compute-1.amazonaws.com:5432/d3aqormo3lobai'
+  },
+
+  seedDB: true
 };
